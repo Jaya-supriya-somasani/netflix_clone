@@ -1,4 +1,4 @@
-package com.example.netflix_clone.ui.auth
+package com.example.netflix_clone.ui.authentication.splash
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle

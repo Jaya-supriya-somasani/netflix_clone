@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "netflix_clone"
 include(":app")
- 
+include(":base")
