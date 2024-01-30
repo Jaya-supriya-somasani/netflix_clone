@@ -16,3 +16,6 @@ dependencyResolutionManagement {
 rootProject.name = "netflix_clone"
 include(":app")
 include(":base")
+include(":base-sub")
+project(":base-sub").projectDir=File("base-sub/base")
+
