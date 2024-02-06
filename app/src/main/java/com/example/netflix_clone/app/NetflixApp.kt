@@ -1,4 +1,4 @@
-package com.example.netflix_clone.ui.app
+package com.example.netflix_clone.app
 
 import com.example.base.app.BaseApp
 import dagger.android.AndroidInjector

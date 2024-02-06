@@ -1,4 +1,4 @@
-package com.example.netflix_clone.ui.module
+package com.example.netflix_clone.di.module
 
 import android.app.Application
 import android.content.Context

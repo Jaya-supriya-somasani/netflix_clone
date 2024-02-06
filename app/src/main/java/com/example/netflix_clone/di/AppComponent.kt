@@ -1,8 +1,9 @@
-package com.example.netflix_clone.ui.di
+package com.example.netflix_clone.di
 
 import android.app.Application
-import com.example.netflix_clone.ui.app.NetflixApp
-import com.example.netflix_clone.ui.module.AppModule
+import com.example.netflix_clone.app.NetflixApp
+import com.example.netflix_clone.di.builder.UIBuilderModule
+import com.example.netflix_clone.di.module.AppModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -13,7 +14,7 @@ import javax.inject.Singleton
  * AndroidInjectionModule is a Dagger module necessary for Dagger Android support.*/
 @Singleton
 @Component(
-    modules = [AndroidInjectionModule::class, AppModule::class]
+    modules = [AndroidInjectionModule::class, AppModule::class, UIBuilderModule::class]
 )
 interface AppComponent : AndroidInjector<NetflixApp> {
     /**
