@@ -4,7 +4,6 @@ plugins {
     id("androidx.navigation.safeargs.kotlin")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("kotlin-parcelize")
 }
 
 android {
@@ -42,7 +41,7 @@ android {
         jvmTarget = "1.8"
     }
     kapt {
-        generateStubs = true
+        correctErrorTypes = true
     }
 }
 
@@ -53,11 +52,12 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
 
-    //dagger dependenciesg
+    //dagger dependencies
     implementation("com.google.dagger:dagger:2.44.2")
+    implementation("com.google.dagger:dagger-android:2.44.2")
+    implementation("com.google.dagger:dagger-android-support:2.44.2")
     kapt("com.google.dagger:dagger-compiler:2.44.2")
-    kapt ("com.google.dagger:dagger-android-processor:2.44.2")
-
+    kapt("com.google.dagger:dagger-android-processor:2.44.2")
     //base module access
     implementation(project(":base-sub"))
 
