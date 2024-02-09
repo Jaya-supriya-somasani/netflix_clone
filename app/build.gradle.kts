@@ -46,7 +46,7 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.core:core-ktx:1.9.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -58,6 +58,7 @@ dependencies {
     implementation("com.google.dagger:dagger-android-support:2.44.2")
     kapt("com.google.dagger:dagger-compiler:2.44.2")
     kapt("com.google.dagger:dagger-android-processor:2.44.2")
+//    kapt("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.5.0")
     //base module access
     implementation(project(":base-sub"))
 
