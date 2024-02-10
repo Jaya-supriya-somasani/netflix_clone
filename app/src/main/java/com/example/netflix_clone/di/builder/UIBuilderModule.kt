@@ -17,20 +17,4 @@ abstract class UIBuilderModule {
         modules = [MainActivityModule::class]
     )
     internal abstract fun mainActivity(): MainActivity
-
-    @Provides
-    @IntoMap
-    @ViewModelKey(MainActivityViewModel::class)
-    internal fun providesActivityViewModel(): ViewModel {
-        return MainActivityViewModel()
-    }
-
-    @Provides
-    internal fun providesActivityViewModelProvider(
-        factory: ViewModelProvider.Factory,
-        target: MainActivity
-    ): MainActivityViewModel {
-        return ViewModelProvider(target, factory)[MainActivityViewModel::class.java]
-    }
-
 }
