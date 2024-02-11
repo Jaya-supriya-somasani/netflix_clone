@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">netflix_clone</string>
+    <string name="app_name">Netflix</string>
     <string name="privacy_text">PRIVACY</string>
     <string name="log_in_text">LOG IN</string>
 </resources>
