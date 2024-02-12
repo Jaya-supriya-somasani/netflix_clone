@@ -5,13 +5,14 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.base.viewmodel.ViewModelKey
 import dagger.Module
 import dagger.Provides
+import dagger.android.ContributesAndroidInjector
 import dagger.multibindings.IntoMap
 
 @Module(includes = [MainActivityModule.ProvidesActivityViewModel::class])
 class MainActivityModule {
 
     @Module
-    internal class ProvidesActivityViewModel{
+    internal class ProvidesActivityViewModel {
 
     }
 
@@ -30,5 +31,6 @@ class MainActivityModule {
     ): MainActivityViewModel {
         return ViewModelProvider(target, factory)[MainActivityViewModel::class.java]
     }
+
 
 }
