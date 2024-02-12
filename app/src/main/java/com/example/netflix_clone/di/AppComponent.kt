@@ -1,6 +1,7 @@
 package com.example.netflix_clone.di
 
 import android.app.Application
+import androidx.lifecycle.ViewModelProvider
 import com.example.netflix_clone.app.NetflixApp
 import com.example.netflix_clone.di.builder.UIBuilderModule
 import com.example.netflix_clone.di.module.AppModule
@@ -21,6 +22,7 @@ interface AppComponent : AndroidInjector<NetflixApp> {
      * @Component.Builder is a part of the component and will be used to construct instances of AppComponent.*/
     @Component.Builder
     interface Builder {
+
 
         /**
          * allow binding an instance  (in this case, Application) to the component during construction.
