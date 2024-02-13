@@ -6,7 +6,7 @@ import com.example.netflix_clone.ui.authentication.AuthenticationActivityModule
 import com.example.netflix_clone.ui.authentication.login.di.LoginModule
 import com.example.netflix_clone.ui.authentication.signup.di.SignUpModule
 import com.example.netflix_clone.ui.authentication.splash.SplashActivity
-import com.example.netflix_clone.ui.authentication.splash.di.OnBoardModule
+import com.example.netflix_clone.ui.authentication.onBoard.di.OnBoardModule
 import com.example.netflix_clone.ui.authentication.splash.di.SplashActivityModule
 import com.example.netflix_clone.ui.home.di.HomeModule
 import com.example.netflix_clone.ui.main.MainActivity
