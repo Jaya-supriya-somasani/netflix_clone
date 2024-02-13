@@ -3,13 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_auth"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/onBoardFragment">
 
     <fragment
         android:id="@+id/onBoardFragment"
         android:name="com.example.netflix_clone.ui.authentication.onBoard.OnBoardFragment"
         android:label="fragment_on_board"
-        tools:layout="@layout/fragment_on_board" />
+        tools:layout="@layout/fragment_on_board" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_onBoardFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.netflix_clone.ui.authentication.signup.SignUpFragment"
