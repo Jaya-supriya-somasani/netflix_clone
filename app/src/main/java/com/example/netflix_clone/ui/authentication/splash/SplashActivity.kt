@@ -20,15 +20,12 @@ class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>() {
 
     private fun navigateToScreens() {
         safeLaunch {
-            val navigationIntent = when {
-                viewModel.isLoggedIn() -> {
-                    Intent(this@SplashActivity, MainActivity::class.java)
-                }
-
-                else -> {
-                    Intent(this@SplashActivity, AuthenticationActivity::class.java)
-                }
-            }
+            val navigationIntent = if (viewModel.isLoggedIn())
+                Intent(this@SplashActivity, MainActivity::class.java)
+            else Intent(
+                this@SplashActivity,
+                AuthenticationActivity::class.java
+            )
             startActivity(navigationIntent)
             finish()
         }
