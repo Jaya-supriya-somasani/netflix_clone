@@ -4,8 +4,10 @@ import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.example.netflix_clone.ui.authentication.AuthenticationActivity
 import com.example.netflix_clone.ui.authentication.AuthenticationActivityModule
+import com.example.netflix_clone.ui.authentication.login.di.LoginModule
 import com.example.netflix_clone.ui.authentication.splash.SplashActivity
 import com.example.netflix_clone.ui.authentication.splash.SplashActivityModule
+import com.example.netflix_clone.ui.home.di.HomeModule
 import com.example.netflix_clone.ui.main.MainActivity
 import com.example.netflix_clone.ui.main.MainActivityModule
 import dagger.BindsInstance
@@ -25,16 +27,23 @@ abstract class UIBuilderModule {
 
         @Provides
         @Singleton
-        fun provideFactory(): ViewModelProvider.Factory = ViewModelProvider.AndroidViewModelFactory()
+        fun provideFactory(): ViewModelProvider.Factory =
+            ViewModelProvider.AndroidViewModelFactory()
     }
 
     @ContributesAndroidInjector(
-        modules = [MainActivityModule::class]
+        modules = [
+            MainActivityModule::class,
+            HomeModule::class,
+        ]
     )
     internal abstract fun mainActivity(): MainActivity
 
     @ContributesAndroidInjector(
-        modules = [SplashActivityModule::class]
+        modules = [
+            SplashActivityModule::class,
+            LoginModule::class
+        ]
     )
     internal abstract fun splashActivity(): SplashActivity
 
