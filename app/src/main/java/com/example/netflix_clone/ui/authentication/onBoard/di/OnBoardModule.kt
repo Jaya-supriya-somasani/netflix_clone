@@ -1,10 +1,10 @@
-package com.example.netflix_clone.ui.authentication.splash.di
+package com.example.netflix_clone.ui.authentication.onBoard.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.base.viewmodel.ViewModelKey
-import com.example.netflix_clone.ui.authentication.splash.OnBoardFragment
-import com.example.netflix_clone.ui.authentication.splash.OnBoardViewModel
+import com.example.netflix_clone.ui.authentication.onBoard.OnBoardFragment
+import com.example.netflix_clone.ui.authentication.onBoard.OnBoardViewModel
 import dagger.Module
 import dagger.Provides
 import dagger.android.ContributesAndroidInjector

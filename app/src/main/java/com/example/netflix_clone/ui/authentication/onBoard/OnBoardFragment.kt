@@ -1,11 +1,5 @@
-package com.example.netflix_clone.ui.authentication.splash
+package com.example.netflix_clone.ui.authentication.onBoard
 
-import androidx.lifecycle.ViewModelProvider
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
 import com.example.base.BaseFragment
 import com.example.netflix_clone.R
