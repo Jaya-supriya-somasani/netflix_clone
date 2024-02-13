@@ -1,6 +1,6 @@
 package com.example.netflix_clone.ui.authentication.splash
 
-import androidx.lifecycle.ViewModel
+import com.example.base.BaseViewModel
 
-class OnBoardViewModel : ViewModel() {
+class OnBoardViewModel : BaseViewModel() {
 }

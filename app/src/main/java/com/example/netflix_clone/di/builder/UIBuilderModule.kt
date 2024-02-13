@@ -1,16 +1,16 @@
 package com.example.netflix_clone.di.builder
 
-import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.example.netflix_clone.ui.authentication.AuthenticationActivity
 import com.example.netflix_clone.ui.authentication.AuthenticationActivityModule
 import com.example.netflix_clone.ui.authentication.login.di.LoginModule
+import com.example.netflix_clone.ui.authentication.signup.di.SignUpModule
 import com.example.netflix_clone.ui.authentication.splash.SplashActivity
-import com.example.netflix_clone.ui.authentication.splash.SplashActivityModule
+import com.example.netflix_clone.ui.authentication.splash.di.OnBoardModule
+import com.example.netflix_clone.ui.authentication.splash.di.SplashActivityModule
 import com.example.netflix_clone.ui.home.di.HomeModule
 import com.example.netflix_clone.ui.main.MainActivity
 import com.example.netflix_clone.ui.main.MainActivityModule
-import dagger.BindsInstance
 import dagger.Module
 import dagger.Provides
 import dagger.android.ContributesAndroidInjector
@@ -42,14 +42,17 @@ abstract class UIBuilderModule {
     @ContributesAndroidInjector(
         modules = [
             SplashActivityModule::class,
-            LoginModule::class
+
         ]
     )
     internal abstract fun splashActivity(): SplashActivity
 
     @ContributesAndroidInjector(
         modules = [
-            AuthenticationActivityModule::class]
+            AuthenticationActivityModule::class,
+            LoginModule::class,
+            SignUpModule::class,
+            OnBoardModule::class,]
     )
     internal abstract fun authenticationActivity(): AuthenticationActivity
 }

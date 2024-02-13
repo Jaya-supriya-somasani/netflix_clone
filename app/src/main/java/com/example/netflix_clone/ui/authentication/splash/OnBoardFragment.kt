@@ -6,26 +6,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.LifecycleOwner
+import com.example.base.BaseFragment
 import com.example.netflix_clone.R
+import com.example.netflix_clone.databinding.FragmentOnBoardBinding
 
-class OnBoardFragment : Fragment() {
+class OnBoardFragment : BaseFragment<FragmentOnBoardBinding, OnBoardViewModel>() {
+    override val TAG = "OnBoardFragment"
 
-    companion object {
-        fun newInstance() = OnBoardFragment()
+    override fun getLayoutResource() = R.layout.fragment_on_board
+
+    override fun initObservers(viewLifecycleOwner: LifecycleOwner) {
     }
 
-    private lateinit var viewModel: OnBoardViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_on_board, container, false)
+    override fun setUp() {
     }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(OnBoardViewModel::class.java)
-    }
-
 }
