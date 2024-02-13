@@ -2,4 +2,7 @@
     <string name="app_name">Netflix</string>
     <string name="privacy_text">PRIVACY</string>
     <string name="log_in_text">LOG IN</string>
+    <string name="icon">icon</string>
+    <string name="privacy">PRIVACY</string>
+    <string name="log_in">LOG IN</string>
 </resources>
