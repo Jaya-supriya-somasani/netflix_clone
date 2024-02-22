@@ -38,10 +38,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputFilledStyle"
             android:id="@+id/emailNumberEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
+            app:boxStrokeColor="@color/transparent"
             android:layout_marginHorizontal="@dimen/margin_normal"
             app:layout_constraintTop_toBottomOf="@id/arrowBackIcon">
 
@@ -49,11 +51,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Email or phone number"
+                android:textColor="@color/grey_83"
+                android:background="@color/black_83"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordEditText"
+            style="?attr/textInputFilledStyle"
+            app:boxStrokeColor="@color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -64,6 +70,8 @@
                 android:layout_height="match_parent"
                 android:hint="Password"
                 android:inputType="text"
+                android:textColor="@color/grey_83"
+                android:background="@color/black_83"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="136dp" />
 

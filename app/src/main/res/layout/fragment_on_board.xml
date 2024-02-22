@@ -51,7 +51,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_normal"
             android:layout_marginEnd="@dimen/margin_normal"
-            android:contentDescription="more"
             app:tint="@color/grey"
             android:src="@drawable/ic_more"
             app:layout_constraintEnd_toEndOf="parent"
