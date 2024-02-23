@@ -21,11 +21,21 @@ class OnBoardFragment : BaseFragment<FragmentOnBoardBinding, OnBoardViewModel>()
                 navigateToLoginScreen()
             }
         }
+        safeLaunchWhenResumed {
+            viewModel.signUpEventClick.collect {
+                navigateToSignUpScreen()
+            }
+        }
     }
 
     private fun navigateToLoginScreen() {
         Log.d(TAG,"Login-event-clicked")
         val action = OnBoardFragmentDirections.actionOnBoardFragmentToLoginFragment()
+        findNavController().navigate(action)
+    }
+    private fun navigateToSignUpScreen() {
+        Log.d(TAG,"SignUp-event-clicked")
+        val action = OnBoardFragmentDirections.actionOnBoardFragmentToSignUpFragment()
         findNavController().navigate(action)
     }
 

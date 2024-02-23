@@ -6,27 +6,24 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.LifecycleOwner
+import androidx.navigation.fragment.findNavController
+import com.example.base.BaseFragment
 import com.example.netflix_clone.R
+import com.example.netflix_clone.databinding.FragmentSignUpBinding
 
-class SignUpFragment : Fragment() {
+class SignUpFragment : BaseFragment<FragmentSignUpBinding, SignUpViewModel>() {
+    override val TAG = "SignUpFragment"
 
-    companion object {
-        fun newInstance() = SignUpFragment()
+    override fun getLayoutResource() = R.layout.fragment_sign_up
+
+    override fun initObservers(viewLifecycleOwner: LifecycleOwner) {
     }
 
-    private lateinit var viewModel: SignUpViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_sign_up, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(SignUpViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun setUp() {
+        dataBinding.closeIcon.setOnClickListener {
+            findNavController().popBackStack()
+        }
     }
 
 }

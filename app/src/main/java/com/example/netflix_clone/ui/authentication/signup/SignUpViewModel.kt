@@ -1,7 +1,6 @@
 package com.example.netflix_clone.ui.authentication.signup
 
-import androidx.lifecycle.ViewModel
+import com.example.base.BaseViewModel
 
-class SignUpViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+class SignUpViewModel : BaseViewModel() {
 }
