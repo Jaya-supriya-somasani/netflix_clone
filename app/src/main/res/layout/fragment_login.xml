@@ -43,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
+            app:hintTextColor="@color/grey_83"
             app:boxStrokeColor="@color/transparent"
             android:layout_marginHorizontal="@dimen/margin_normal"
             app:layout_constraintTop_toBottomOf="@id/arrowBackIcon">
@@ -63,6 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            app:hintTextColor="@color/grey_83"
             app:layout_constraintTop_toBottomOf="@id/emailNumberEditText">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -92,6 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_normal"
             android:text="@string/or"
+            android:textColor="@color/grey_83"
             app:layout_constraintBottom_toTopOf="@id/signInCodeButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
