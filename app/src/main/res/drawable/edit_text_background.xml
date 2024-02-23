@@ -1,9 +1,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_focused="true">
-        <shape>
-            <solid android:color="@color/yellow" /> <!-- Change to your desired grey color -->
-        </shape>
-    </item>
     <item>
         <shape>
             <solid android:textColor="@android:color/holo_red_dark" /> <!-- Change to your default background color -->
