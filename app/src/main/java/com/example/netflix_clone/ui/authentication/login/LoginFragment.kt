@@ -1,32 +1,23 @@
 package com.example.netflix_clone.ui.authentication.login
 
-import androidx.lifecycle.ViewModelProvider
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.lifecycle.LifecycleOwner
+import androidx.navigation.fragment.findNavController
+import com.example.base.BaseFragment
 import com.example.netflix_clone.R
+import com.example.netflix_clone.databinding.FragmentLoginBinding
 
-class LoginFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = LoginFragment()
+class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>() {
+    override fun initObservers(viewLifecycleOwner: LifecycleOwner) {
     }
 
-    private lateinit var viewModel: LoginViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_login, container, false)
+    override fun setUp() {
+        dataBinding.viewModel = viewModel
+        dataBinding.arrowBackIcon.setOnClickListener {
+            findNavController().popBackStack()
+        }
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+    override val TAG = "LoginFragment"
+    override fun getLayoutResource() = R.layout.fragment_login
 
 }

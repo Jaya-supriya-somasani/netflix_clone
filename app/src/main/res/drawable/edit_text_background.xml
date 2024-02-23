@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:textColor="@android:color/holo_red_dark" /> <!-- Change to your default background color -->
+        </shape>
+    </item>
+</selector>

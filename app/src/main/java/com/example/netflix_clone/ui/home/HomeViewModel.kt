@@ -1,8 +1,8 @@
-package com.example.netflix_clone.ui.authentication.login
+package com.example.netflix_clone.ui.home
 
 import androidx.lifecycle.ViewModel
 import com.example.base.BaseViewModel
 
-class LoginViewModel : BaseViewModel() {
+class HomeViewModel : BaseViewModel() {
     // TODO: Implement the ViewModel
 }

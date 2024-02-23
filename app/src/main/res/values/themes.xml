@@ -2,8 +2,87 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Netflix_clone" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/black</item>
     </style>
 
-    <style name="Theme.Netflix_clone" parent="Base.Theme.Netflix_clone" />
+    <style name="Theme.Netflix_clone" parent="Base.Theme.Netflix_clone">
+        <item name="android:colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/grey_87</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/red_50</item>
+
+        <!--  text styles -->
+        <item name="android:textColorPrimary">?colorOnPrimary</item>
+
+        <!-- Widgets -->
+        <item name="android:textViewStyle">@style/Widget.netflix_clone.TextView</item>
+        <item name="materialButtonStyle">@style/Widget.netflix_clone.Button</item>
+        <item name="buttonStyle">@style/Widget.netflix_clone.Button</item>
+    </style>
+
+    <style name="Widget.netflix_clone.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Widget.netflix_clone.TextInputEditText.FilledBox" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+
+<!--        <item name="android:background">@drawable/edit_text_background</item>-->
+        <item name="android:backgroundTint">@color/grey_83</item>-->
+        <item name="android:paddingTop">32dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="hintTextColor">@color/grey_83</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="ThemeOverlay.netflix_clone.TextInputEditText.OutlinedBox" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="colorPrimary">?android:textColorPrimary</item>
+        <item name="colorSecondary">?android:textColorSecondary</item>
+        <item name="editTextStyle">@style/Widget.netflix_clone.TextInputEditText.FilledBox</item>
+    </style>
+
+    <style name="Widget.netflix_clone.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.netflix_clone.Button.Small" parent="Widget.netflix_clone.Button">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="Widget.netflix_clone.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textColor">?colorSecondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:backgroundTint">@color/transparent</item>
+    </style>
+
+    <style name="Widget.netflix_clone.Button.TextButton.Small" parent="@style/Widget.netflix_clone.Button.TextButton">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="Widget.netflix_clone.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:gravity">center</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:backgroundTint">@color/transparent</item>
+    </style>
+
+    <style name="Widget.netflix_clone.Button.NoStyle" parent="Widget.netflix_clone.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
 </resources>

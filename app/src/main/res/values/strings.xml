@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">netflix_clone</string>
+    <string name="app_name">Netflix</string>
+    <string name="privacy_text">PRIVACY</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="icon">icon</string>
+    <string name="privacy">PRIVACY</string>
+    <string name="log_in">LOG IN</string>
+    <string name="get_started">Get started</string>
+    <string name="or">OR</string>
+    <string name="sign_in_code">Use a sign-in code</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="new_account">New ro Netflix? Sign up now.</string>
+    <string name="captcha_text">Sign-in is protected by Google reCAPTCHA to ensure you\'re not a bot.\n Learn more.</string>
 </resources>
