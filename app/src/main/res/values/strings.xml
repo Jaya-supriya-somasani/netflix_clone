@@ -9,7 +9,7 @@
     <string name="or">OR</string>
     <string name="sign_in_code">Use a sign-in code</string>
     <string name="forgot_password">Forgot password?</string>
-    <string name="new_account">New ro Netflix? Sign up now.</string>
+    <string name="new_account">New to Netflix? Sign up now.</string>
     <string name="captcha_text">Sign-in is protected by Google reCAPTCHA to ensure you\'re not a bot.\n Learn more.</string>
     <string name="signUpDesc">Enter your email to create or sign in to your account.</string>
     <string name="signUpTitle">Ready to watch?</string>
