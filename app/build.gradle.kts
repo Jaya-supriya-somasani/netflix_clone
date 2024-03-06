@@ -4,6 +4,7 @@ plugins {
     id("androidx.navigation.safeargs.kotlin")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -53,13 +54,10 @@ dependencies {
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation ("com.airbnb.android:lottie:4.2.2")
+    implementation("com.airbnb.android:lottie:4.2.2")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-
-
-
 
 
     //dagger dependencies
@@ -68,7 +66,6 @@ dependencies {
     implementation("com.google.dagger:dagger-android-support:2.44.2")
     kapt("com.google.dagger:dagger-compiler:2.44.2")
     kapt("com.google.dagger:dagger-android-processor:2.44.2")
-//    kapt("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.5.0")
     //base module access
     implementation(project(":base-sub"))
 
