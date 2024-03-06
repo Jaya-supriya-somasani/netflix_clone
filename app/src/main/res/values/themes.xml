@@ -29,7 +29,6 @@
     <style name="Widget.netflix_clone.TextInputEditText.FilledBox" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
 
 <!--        <item name="android:background">@drawable/edit_text_background</item>-->
-        <item name="android:backgroundTint">@color/grey_83</item>-->
         <item name="android:paddingTop">32dp</item>
         <item name="android:paddingBottom">4dp</item>
         <item name="android:textAppearance">?attr/textAppearanceBody2</item>
@@ -42,7 +41,6 @@
     <style name="ThemeOverlay.netflix_clone.TextInputEditText.OutlinedBox" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
         <item name="colorPrimary">?android:textColorPrimary</item>
         <item name="colorSecondary">?android:textColorSecondary</item>
-        <item name="editTextStyle">@style/Widget.netflix_clone.TextInputEditText.FilledBox</item>
     </style>
 
     <style name="Widget.netflix_clone.Button" parent="Widget.MaterialComponents.Button">

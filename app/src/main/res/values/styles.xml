@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TextAppearance -->
+
+    <style name="TextAppearance.netflix.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:fontFamily">?fontMedium</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+
+    <style name="TextAppearance.netflix.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:fontFamily">?fontLight</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:fontFamily">?fontNormal</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:fontFamily">?fontBold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">?fontNormal</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">?fontBold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Headline6.Inverse" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">?fontBold</item>
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Error" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">?fontBold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?android:colorError</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">?fontNormal</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">?fontNormal</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Body2.Inverse" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">?fontNormal</item>
+        <item name="android:textColor">?android:textColorSecondaryInverse</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">?fontBold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">?fontNormal</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:fontFamily">?fontMedium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.netflix.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">?fontSemiBold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>
