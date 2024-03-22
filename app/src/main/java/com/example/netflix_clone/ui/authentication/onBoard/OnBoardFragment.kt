@@ -1,5 +1,7 @@
 package com.example.netflix_clone.ui.authentication.onBoard
 
+import android.content.Intent
+import android.net.Uri
 import android.util.Log
 import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.fragment.findNavController
@@ -71,5 +73,11 @@ class OnBoardFragment : BaseFragment<FragmentOnBoardBinding, OnBoardViewModel>()
     override fun setUp() {
         dataBinding.viewModel = viewModel
         dataBinding.viewPager.adapter = adapter
+        dataBinding.privacyText.setOnClickListener {
+            val url = "https://help.netflix.com/legal/privacy?netflixsource=android&fromApp=true"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
     }
 }

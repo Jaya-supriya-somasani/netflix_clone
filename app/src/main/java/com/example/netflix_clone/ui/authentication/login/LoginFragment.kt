@@ -1,5 +1,7 @@
 package com.example.netflix_clone.ui.authentication.login
 
+import android.content.Intent
+import android.net.Uri
 import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.fragment.findNavController
 import com.example.base.BaseFragment
@@ -26,6 +28,15 @@ class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>() {
     override fun setUp() {
         dataBinding.viewModel = viewModel
         dataBinding.arrowBackIcon.setOnClickListener {
+            findNavController().popBackStack()
+        }
+        dataBinding.forgotPswdButton.setOnClickListener {
+            val url = "https://www.netflix.com/in/loginhelp?fromApp=true&netflixsource=android"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
+        dataBinding.signUpButton.setOnClickListener {
             findNavController().popBackStack()
         }
     }
