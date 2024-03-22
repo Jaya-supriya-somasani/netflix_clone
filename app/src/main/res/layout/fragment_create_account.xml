@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.example.netflix_clone.ui.authentication.newAccount.CreateAccountViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/netflixIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:src="@drawable/ic_netflix_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/helpTvBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="HELP"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/loginBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:text="LOG IN"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.netflix.Headline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="Unlimited films, TV programmes &amp;\nmore "
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/netflixIcon" />
+
+        <TextView
+            android:id="@+id/subTiitle"
+            style="@style/TextAppearance.netflix.Subtitle1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:text="As a member, you can watch exclusive TV programmes and films on the mobile app and all your other devices."
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailEditLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            app:layout_constraintTop_toBottomOf="@id/subTiitle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:inputType="textWebEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordEditLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            app:layout_constraintTop_toBottomOf="@id/emailEditLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:inputType="textWebEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/getStartedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:backgroundTint="@color/red"
+            android:onClick="@{()->viewmodel.navigateToCreateAccount()}"
+            android:text="@string/create_account"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordEditLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
