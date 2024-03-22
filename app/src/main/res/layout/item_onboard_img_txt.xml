@@ -2,6 +2,13 @@
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="item"
+            type="com.example.netflix_clone.ui.authentication.onBoard.model.OnBoardItem" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -11,24 +18,30 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
             tools:src="@drawable/intro_pic" />
 
         <TextView
             android:id="@+id/titleTv"
+            style="@style/TextAppearance.netflix.Headline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@{item.title}"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@id/subTitleTv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="20dp"
             tools:text="Sample movie" />
 
         <TextView
             android:id="@+id/subTitleTv"
+            style="@style/TextAppearance.netflix.Subtitle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
-            android:textSize="18sp"
+            android:layout_marginBottom="150dp"
+            android:text="@{item.subtitle}"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

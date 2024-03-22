@@ -59,13 +59,10 @@
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/grey" />
 
-
-        <androidx.recyclerview.widget.RecyclerView
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_onboard_img_txt" />
+            android:layout_height="match_parent" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"

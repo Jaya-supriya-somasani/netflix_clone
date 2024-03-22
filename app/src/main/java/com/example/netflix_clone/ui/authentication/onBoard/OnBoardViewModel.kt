@@ -12,7 +12,7 @@ class OnBoardViewModel : BaseViewModel() {
         loginEventClick.sendValue(Unit)
     }
 
-    fun navigateToSignUpScreen(){
+    fun navigateToSignUpScreen() {
         signUpEventClick.sendValue(Unit)
     }
 }
