@@ -5,8 +5,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.base.viewmodel.ViewModelKey
 import com.example.netflix_clone.ui.authentication.newAccount.CreateAccountFragment
 import com.example.netflix_clone.ui.authentication.newAccount.CreateAccountViewModel
-import com.example.netflix_clone.ui.authentication.signup.SignUpFragment
-import com.example.netflix_clone.ui.authentication.signup.SignUpViewModel
 import dagger.Module
 import dagger.Provides
 import dagger.android.ContributesAndroidInjector

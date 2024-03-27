@@ -14,4 +14,9 @@
     <string name="signUpDesc">Enter your email to create or sign in to your account.</string>
     <string name="signUpTitle">Ready to watch?</string>
     <string name="create_account">Create Account</string>
+    <string name="help">HELP</string>
+    <string name="create_ac_description">As a member, you can watch exclusive TV programmes and films on the mobile app and all your other devices.</string>
+    <string name="create_ac_title"><![CDATA[Unlimited films, TV programmes &\nmore]]></string>
+    <string name="password">password</string>
+    <string name="email">email</string>
 </resources>

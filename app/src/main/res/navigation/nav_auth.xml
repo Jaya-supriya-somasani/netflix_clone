@@ -39,5 +39,9 @@
         android:id="@+id/createAccountFragment"
         android:name="com.example.netflix_clone.ui.authentication.newAccount.CreateAccountFragment"
         android:label="CreateAccountFragment"
-        tools:layout="@layout/fragment_create_account" />
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
