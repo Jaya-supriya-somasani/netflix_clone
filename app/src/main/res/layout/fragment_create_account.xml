@@ -83,6 +83,7 @@
             app:layout_constraintTop_toBottomOf="@id/subTitle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditInp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"

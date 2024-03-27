@@ -31,17 +31,20 @@ class SignUpFragment : BaseFragment<FragmentSignUpBinding, SignUpViewModel>() {
     }
 
     private fun validateEmail() {
-        Log.d(TAG, "get-started email ${dataBinding.emailEditInp.text}")
+        val email = dataBinding.emailEditInp.text?.toString().orEmpty().trim()
+        Log.d(TAG, "get-started email $email")
 
-        if (dataBinding.emailEditInp.text.isNullOrBlank()) {
+        if (email.isBlank()) {
             Log.d(TAG, "get-started if")
             dataBinding.emailEditTextLayout.error = "Enter email id"
+        } else if (!email.contains("@gmail.com")) {
+            Log.d(TAG, "get-started else if")
+            dataBinding.emailEditTextLayout.error = "Invalid email format"
         } else {
-            Log.d(TAG, "get-started  else")
+            Log.d(TAG, "get-started else")
             dataBinding.emailEditTextLayout.error = ""
-            val action = SignUpFragmentDirections.actionSignUpFragmentToCreateAccountFragment()
+            val action = SignUpFragmentDirections.actionSignUpFragmentToCreateAccountFragment(email = email)
             findNavController().navigate(action)
         }
     }
-
 }
