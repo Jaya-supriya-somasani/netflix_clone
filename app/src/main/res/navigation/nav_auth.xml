@@ -9,7 +9,7 @@
         android:id="@+id/onBoardFragment"
         android:name="com.example.netflix_clone.ui.authentication.onBoard.OnBoardFragment"
         android:label="fragment_on_board"
-        tools:layout="@layout/fragment_on_board" >
+        tools:layout="@layout/fragment_on_board">
         <action
             android:id="@+id/action_onBoardFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -21,7 +21,11 @@
         android:id="@+id/signUpFragment"
         android:name="com.example.netflix_clone.ui.authentication.signup.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.netflix_clone.ui.authentication.login.LoginFragment"
@@ -31,4 +35,9 @@
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.example.netflix_clone.ui.authentication.newAccount.CreateAccountFragment"
+        android:label="CreateAccountFragment"
+        tools:layout="@layout/fragment_create_account" />
 </navigation>

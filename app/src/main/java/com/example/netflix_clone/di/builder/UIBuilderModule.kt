@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.netflix_clone.ui.authentication.AuthenticationActivity
 import com.example.netflix_clone.ui.authentication.AuthenticationActivityModule
 import com.example.netflix_clone.ui.authentication.login.di.LoginModule
+import com.example.netflix_clone.ui.authentication.newAccount.di.CreateAccountModule
 import com.example.netflix_clone.ui.authentication.signup.di.SignUpModule
 import com.example.netflix_clone.ui.authentication.splash.SplashActivity
 import com.example.netflix_clone.ui.authentication.onBoard.di.OnBoardModule
@@ -52,7 +53,9 @@ abstract class UIBuilderModule {
             AuthenticationActivityModule::class,
             LoginModule::class,
             SignUpModule::class,
-            OnBoardModule::class,]
+            OnBoardModule::class,
+            CreateAccountModule::class,
+        ]
     )
     internal abstract fun authenticationActivity(): AuthenticationActivity
 }

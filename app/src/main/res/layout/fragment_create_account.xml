@@ -17,7 +17,7 @@
             android:id="@+id/netflixIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginStart="@dimen/margin_large"
             android:layout_marginTop="@dimen/margin_normal"
             android:src="@drawable/ic_netflix_name"
             app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +61,7 @@
             style="@style/TextAppearance.netflix.Subtitle1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginStart="@dimen/margin_large"
             android:layout_marginTop="@dimen/margin_normal"
             android:layout_marginEnd="@dimen/margin_normal"
             android:text="As a member, you can watch exclusive TV programmes and films on the mobile app and all your other devices."
@@ -74,7 +74,7 @@
             android:id="@+id/emailEditLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/margin_normal"
+            android:layout_marginHorizontal="@dimen/margin_large"
             android:layout_marginTop="@dimen/margin_normal"
             app:layout_constraintTop_toBottomOf="@id/subTiitle">
 
@@ -89,7 +89,7 @@
             android:id="@+id/passwordEditLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/margin_normal"
+            android:layout_marginHorizontal="@dimen/margin_large"
             android:layout_marginTop="@dimen/margin_normal"
             app:layout_constraintTop_toBottomOf="@id/emailEditLayout">
 
